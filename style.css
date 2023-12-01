@@ -3,23 +3,25 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Noto Sans', sans-serif;}
-
-.popup {
-    padding: 50px;
-    display: inline-block;
-    position: relative;
-    width: 60vw;
-    height: 50vh;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
 }
 
+
+.popup {
+    position: absolute;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
 .company-logo {
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-    bottom: 300px;
-    width: 25%;
-    height: 100%;
+    float: left;
+    width: 30%;
+    max-width: 300px;
 }
 .company-logo img {
     object-fit: cover;
@@ -52,12 +54,12 @@ input {
 }
 
 .password > span {
-    display: inline-block;
-    position: absolute;
-    right: 100px;
+    float: right;
 }
 
 .pattern-area {
+    display: inline-block;
+    width: 100%;
     padding: 10px 0 20px 0;
 }
 
@@ -109,7 +111,7 @@ ul li::before {
 }
 
 .offers-check input {
-    width: 100px;
+    width: 75px;
     display: inline-block;
 }
 
